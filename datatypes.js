@@ -10,14 +10,25 @@
 //big int // for more range in numbers
 // string // character data type  string=""
 //boolean // true or false
-//null // null means nothing empty it is a type of "object"
+//null // null means nothing empty it is a type of "object" standalone value
 //undefiend // value is not assingnedb that variable
 //symbol // use for unique identify
 
 //object
 
+//usage of data types and there syntax
+let num = 7
+let name = "liyakat"
+let not = null;
+let un;
+let isloggedin = true;
+
+console.table([typeof num,"name",not,un,isloggedin]);
+ 
+
 console.log(typeof null);//null is a type of object
-console.log(typeof undefined);
+console.log(typeof undefined);//undefined
 console.log(typeof symbol);
-console.log(typeof symbol);
+//console.log(typeof symbol);
+
 
