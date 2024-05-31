@@ -24,11 +24,12 @@ let un;
 let isloggedin = true;
 
 console.table([typeof num,"name",not,un,isloggedin]);
- 
+   
 
 console.log(typeof null);//null is a type of object
 console.log(typeof undefined);//undefined
 console.log(typeof symbol);
+console.log(77+56);
 //console.log(typeof symbol);
 
 
