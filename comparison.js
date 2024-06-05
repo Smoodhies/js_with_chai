@@ -36,7 +36,7 @@
 // console.log( ( true == 1));true
 // console.log( ( true === 1));false
 //console.log(typeof (1 == true));boolean
-// console.log(  null== false );//result is false
+// console.log(null == false );//result is false
 // console.log(null <= false);// result is true because of conversion
 // console.log(null >= false);// here is also true because of conversion
 
