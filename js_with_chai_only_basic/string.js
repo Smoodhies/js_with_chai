@@ -4,6 +4,7 @@
 // let str2=" smookey"
 // console.log(str + str2);
 // console.log(str + str2 +" this is normal string operation");
+// console.log('hello india'[7]);// op is "n"
 
 
 // console.log(`hello this my name ${str2}`);//string inperpolation option is feature in this single code
@@ -76,6 +77,10 @@ const garb="%20";
 // console.log(str.replace(" | %20","/"));
 console.log(str.replace(/.com/gi,"-"));
 
+
+// let string=-23234578578n
+// let num = Number(string) ;
+// console.log((Math.abs(num))); //maths function it is not worked with bigint number
 
 
 

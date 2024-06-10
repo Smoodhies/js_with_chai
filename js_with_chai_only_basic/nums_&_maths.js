@@ -30,7 +30,7 @@ let num2= new Number (4345465)
 
 //!! maths operation is done only with number not with bigint 
 
-let n1=new Number(-786.486)
+let n1=new Number(786.086)
 let n2= Math.round(n1)
 let n3= -5554644646465n
 
@@ -41,9 +41,31 @@ let n3= -5554644646465n
 // console.log(Math.abs(Math.round(n1)));// o/p is 786
 // console.log(Math.abs(Math.round(n1)));// o/p is 786.486
 
+
+// let val =-6.666436
+// let val2 = 6.666436
+// console.log(Math.ceil(val));//ceil has work inverse when we gave -ve value its takes lower value instead of  higher value !! o/p is -6 !!
+// console.log(Math.ceil(val2));// O/P 7
+
+//sames condition happens with math.floor also when gave -ve value it act different like math.ceil
+
+
 // console.log(Math.round(Math.random()*10)+1);//we  got single digit random numbers 1 ,5, 7 
 
-let min=10;
-let max=20;
-console.log(Math.round(Math.random(n3)*10)+1*(max-min));//we got our desireable results 10 and 20 btw 11, 15 , 17 etc
+// let min=-11;
+// let max=-22;
+// console.log(Math.abs(Math.round((Math.random(n3)*10)+1*(max-min))));//we got our desireable results 10 and 20 btw 11, 15 , 17  if  we want to  only  wants in +ve values etc
 
+// let ex = Number(78,8,77);// in number ther not takes multiple values in it
+let ex= 6534;
+let ex2 = -55
+let ex3 = 54.5642
+
+console.log(Math.sign(ex2));//!! o/p is !! when we gave -ve values then op is -1
+//when we gave +ve values then op is 1
+//when we gave 0 values then op is 0
+
+console.log(Math.max(1,78,89,22,223,44));// o/p is 223
+console.log(Math.min(1,78,89,22,223,44));// op is 1
+
+ 
