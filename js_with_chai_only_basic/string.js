@@ -18,7 +18,7 @@
 
 // // console.log(str3.__proto__);//we access prototype by this 
 
-// // console.log(str3.length);// we access prototype function by this method such as lenght any many more
+// // console.log(str3.length);// we access prototype function by this method such as lenght any many more 
 // console.log([str4.toUpperCase]);  
 
 //!! "string and there types of methods>>(build in function)" !!
@@ -75,7 +75,7 @@ str="https://liyakat.com/ liyakat %20 shaikh";
 const garb="%20";
 // const slash="/"
 // console.log(str.replace(" | %20","/"));
-console.log(str.replace(/.com/gi,"-"));
+// console.log(str.replace(/.com/gi,"-"));
 
 
 // let string=-23234578578n
@@ -83,7 +83,66 @@ console.log(str.replace(/.com/gi,"-"));
 // console.log((Math.abs(num))); //maths function it is not worked with bigint number
 
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+// revise 
+
+
+const name01 = "smookey"
+const mob01 = 123456789
+const email_01 = "xyz@gmail.com"
+const garbage_value ="hello my name is    "
+const AC_no = 1422
 
 
 
 
+
+// REMAINING METHODS
+
+// console.log(AC_no.toString().padStart(16,"*")); // op is ************1422 this is uses in banking safety features 
+
+// console.log(AC_no.toString().padEnd(16,"*"));// op is  1422************ this is uses in banking safety features 
+
+// console.log(email_01.search("."));// op is if value is true then 0
+
+// console.log(garbage_value.repeat(2));//hello my name is    hello my name is 
+
+// const op0 =(AC_no.toString().match("1"));
+// console.log(op0); // o/p is  
+// // [ '1', index: 0, input: '1422', groups: undefined ]
+
+// console.log(name01.matchAll("smookey")); // this method is for a worked on objects 
+
+// console.log(garbage_value.strike());
+
+
+
+
+// console.log(garbage_value.trim().split(" "));//[ 'hello', 'my', 'name', 'is' ]
+
+// console.log(garbage_value.trim().split(" ").join(" "));//hello my name is
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+//                            INVESTIGATION
+
+// const op =console.log(AC_no.toString().padStart(16,"*"));
+// console.log(op); // output is undefined for investigation study
+
+
+
+
+
+//methods difference
+// console.log(garbage_value.trim().split(" "));[ 'hello', 'my', 'name', 'is' ]
+
+//error
+// console.log(garbage_value.trim(garbage_value.split(" "))); // hello my name is
+
+//unwanted op 
+// console.log(garbage_value.split(garbage_value.trim()));// op is [ '', '    ' ]

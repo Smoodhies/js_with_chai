@@ -1,5 +1,5 @@
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-//                                OBJECTS-DECLARTION00
+//                                OBJECTS-DECLARTION
  
 let unique = Symbol("key")
 let num= Number(7821)
@@ -157,3 +157,58 @@ let f_obj = Object.assign({},obj01,obj02)// GOOD practice  { '1': 'a', '2': 'b',
 // console.log(f_obj);
 
 // console.log(obj3==target);// op iis true
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+//                                 JSON
+
+{
+    // in this api are written object format 
+    // but in this when we write api both key and values wite in string type  
+
+
+     //want know more go unknown jason formatter
+
+     //ex
+    //  {
+    //     "message": "Not Found",
+    //     "documentation_url": "https://docs.github.com/rest",
+    //     "status": "404"
+    // }
+}
+
+[
+    // this also a api is in array
+]
+
+[
+{},{}
+// this also a api is in array but have many objects in it
+
+]
+
+           
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+// !! ...rest !! this rest operator use to take many inputs this is also act as spread operator
+
+let course={
+    c_name:"js",
+    price:"999",
+    c_instructor:"smookey"
+
+}
+
+//object destructuring this method 
+const {c_instructor } = course
+
+console.log(c_instructor);// o/p is smookey
+
+const {c_instructor:short } = course //here is destructuring created for c_instructor and new name is short and here the course act as reference for a objects in it 
+
+// console.log(short);// o/p is smookey
+
+
+const {c_instructor:short1, c_name: name1,course:c } = course 
+
+// console.log(c);// object name is cannot be destructuring . o/p is undefined
+
+// console.log(name1);// o/p is js

@@ -1,7 +1,7 @@
 /*                            Arrays & Methods                                   */
 
 // Types declaration of array
-// let arr=["h","e"] // we local declare we can  use it as SQ brackets
+// let arr=["h","e"] // we local declare we can  use it as Square brackets
 // console.log(typeof arr);// o/p is object 
 // let arr2=Array("h","e","l","l","o");
 
@@ -32,11 +32,49 @@ let dc = new Array("superman","batman","flash","aquaman");
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 //                          ARRAY METHOD                                        //
 
+// add a new value in simple array without anymethod
+
+const alphabets = ["a","b","c","d","e"]
+alphabets[alphabets.length]="f"
+// console.log(alphabets);  //[ 'a', 'b', 'c', 'd', 'e', 'f' ]
+
+//Object.seal(alphabets)// array is also a object
+
+// !! tip for add any new value in array without enter the index num of an array !!
+
+
+
+alphabets[7]="g"
+// console.log("before seal object",alphabets);//[ 'a', 'b', 'c', 'd', 'e', <1 empty item>, 'f' ]
+// console.log("after seal object",alphabets);//after seal object [ 'a', 'b', 'c', 'd', 'e' ]
+
+
+// add a new value in simple array with nested with object inside array
+const nested_arr=[1,
+  {
+name : "smookey",
+roll_no:"152",
+  },
+  "a","b"
+]
+// console.log(nested_arr);
+
+nested_arr[1].name="s"
+nested_arr[1].mob=1234576878  // this new key and also value is added in it
+
+// console.log(nested_arr);//[ 1, { name: 's', roll_no: '152', mob: 1234576878 }, 'a', 'b' ]
+
+
+
+
+
+
+
 // mcu.push(9)
 // console.log(mcu);//[ 'iron_man', 'thor', 'spider_man', 'hulk', 9 ] it is added the element at last index num of an array
 
 // dc.pop("h")
-// console.log(dc);//[ 'superman', 'batman', 'flash' ] pop removed ther last element of an array even you passed a argument 
+// console.log(dc);//[ 'superman', 'batman', 'flash' ] pop removed there last element of an array even you passed a argument 
 
 // dc.push(mcu)
 // console.log(dc);// o/p is   [ 'superman',
@@ -67,7 +105,7 @@ let myarr2=[1,2,3,4,5,6]
 
 // newarr= myarr.join()+myarr2.join()//OP is  a,b,c,d1,2,3,4,5,6
   myarr2 = myarr
-// console.log(myarr2);//OP is a,b,c,d old value is removd or replaced by this value 
+// console.log(myarr2);//OP is a,b,c,d old value is removed or replaced by this value 
 
 // console.log(newarr);
 // console.log(typeof newarr);//op is "string"
@@ -86,15 +124,87 @@ let newarry=arry1.slice(0,3)
 
 
 
-newarry=arry1.splice(1,2)
+// newarry=arry1.splice(1,2)
+
 // console.log("new",newarry);// O/P  is
                       //[ 2, 3 ]
-                      //[ 1, 4, 5, 6 ] whenn we use splice method then it removed that selected index range and removed all element covered in that index range of array .also it work at reference location  means actual location provided by "heap" not on copy location means provided by "stack" 
+                      //[ 1, 4, 5, 6 ] when we use splice method then it removed that selected index range and removed all element covered in that index range of array .also it work at reference location  means actual location provided by "heap" not on copy location means provided by "stack" 
 // console.log("old",arry1);
 
 
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// newarry = arry1.splice(1,2,55,77,99)
 
-/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+// console.log(newarry);//[ 2, 3 ]
+
+// console.log("original array",arry1);
+// // [
+// //   1, 55, 77, 99,
+// //   4,  5,  6
+// // ]
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+const even=[2,4,6,8,10,100,32,5,120];
+
+
+
+const alphabet=["a","b","c","d","e","f","g","h","i","j","k"]
+//reverse method
+// console.log(even.reverse());//[ 10, 8, 6, 4, 2 ] this is method work on reference memory location means change the OG array value
+// console.log(even);
+
+
+//sort method
+let rev=alphabet.reverse();
+// [
+//   'k', 'j', 'i', 'h',
+//   'g', 'f', 'e', 'd',
+//   'c', 'b', 'a'
+// ]
+
+// console.log(rev);
+// console.log(rev.sort());// this method help to sort the array by default alphabetical order  loop hole is first it is converted into ascii  code then compare mix of capital and small may not sorted by them
+// [
+//   'a', 'b', 'c', 'd',
+//   'e', 'f', 'g', 'h',
+//   'i', 'j', 'k'
+// ]
+
+// console.log(rev.sort((function(a, b){return b-a})));// 
+
+// //Number sorting 
+// A negative value indicates that a should come before b. (a to b)
+// A positive value indicates that a should come after b. (b to a)
+// Zero or NaN indicates that a and b are considered equal.
+
+// console.log(even.sort()); // sort by alphabetical
+
+// [
+//   10, 100, 120, 2, 32,
+//    4,   5,   6, 8
+// ] 
+
+// [
+//   2,  4,   5,   6, 8,
+//  10, 32, 100, 120
+// ]
+
+// console.log(even.sort((function(a, b){return -a-b})));//sort by descending
+// console.log(even.sort((function(a, b){return b-a})));//sort by descending
+
+// [
+//   120, 100, 32, 10, 8,
+//     6,   5,  4,  2
+// ]
+
+// console.log(even.sort((function(a, b){return a,b ===0 })));//keep OG value
+
+
+
+
+/*   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   */
 //                    NESTED ARRAY with investigation study
 
 //!!type_1!!+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -148,6 +258,16 @@ let com_arr1= Array(11,22,33,44,["a","b",["aa","bb"]],["A","b","c"])
 // console.log((com_arr1.flat(Infinity).includes("b")));//true
 
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+const EX_array=[2,4,6,8,10];
+// EX_array.reduceRight()
+// console.log(EX_array);
+// console.log(EX_array[3]);
+
+
+//reverse method
+// console.log(EX_array.reverse());//[ 10, 8, 6, 4, 2 ] this is method work on reference memory location means change the OG array value
+// console.log(EX_array);
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -193,7 +313,7 @@ let all_arr=[...arr0,...arr1]
 
 //  let array = [1,2,3,4]
 
-// console.log(Array.isArray(array));//O/P is true this isarray functiob used to check for the array or not
+// console.log(Array.isArray(array));//O/P is true this isarray function used to check for the array or not
 
 // type 1
 // let obj_arr2=Array({
@@ -242,4 +362,13 @@ let score3=375
 
 
 
+
 // console.log((mcu[0]).charAt === (dc[0].charAt))
+// tic tac toe game 
+
+let tic_tac =Array(
+  ["X",null,null,],
+  [null,null,"O",],
+  ["X",null,"X"])
+
+// console.log(tic_tac);
