@@ -7,6 +7,7 @@ let num= Number(7821)
 ;
 
 
+
 let obj0={
 
     greeting: new function()
@@ -158,7 +159,7 @@ let f_obj = Object.assign({},obj01,obj02)// GOOD practice  { '1': 'a', '2': 'b',
 
 // console.log(obj3==target);// op iis true
 
-/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 //                                 JSON
 
 {
@@ -187,7 +188,7 @@ let f_obj = Object.assign({},obj01,obj02)// GOOD practice  { '1': 'a', '2': 'b',
 ]
 
            
-/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 // !! ...rest !! this rest operator use to take many inputs this is also act as spread operator
 
 let course={

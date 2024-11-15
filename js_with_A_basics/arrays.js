@@ -1,5 +1,7 @@
 /*                            Arrays & Methods                                   */
 
+
+
 // Types declaration of array
 // let arr=["h","e"] // we local declare we can  use it as Square brackets
 // console.log(typeof arr);// o/p is object 
@@ -29,10 +31,12 @@
 let dc = new Array("superman","batman","flash","aquaman");  
 
 
+
+
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 //                          ARRAY METHOD                                        //
 
-// add a new value in simple array without anymethod
+// add a new value in simple array without any                      method
 
 const alphabets = ["a","b","c","d","e"]
 alphabets[alphabets.length]="f"
@@ -257,6 +261,15 @@ let com_arr1= Array(11,22,33,44,["a","b",["aa","bb"]],["A","b","c"])
 // console.log((com_arr1.includes("b")));//false
 // console.log((com_arr1.flat(Infinity).includes("b")));//true
 
+// console.log((com_arr1.find().includes("b")));// undefined is not a function
+
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//                     ++++++++++++ NOTE THIS ++++++++++++++
+// console.log (typeof com_arr1);//object
+// console.log( typeof (typeof com_arr1));// string
+// console.log(typeof (typeof (typeof com_arr1)));// string
+// console.log(typeof (typeof (typeof (typeof com_arr1))));// string
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 const EX_array=[2,4,6,8,10];
@@ -372,3 +385,7 @@ let tic_tac =Array(
   ["X",null,"X"])
 
 // console.log(tic_tac);
+
+
+//new 
+

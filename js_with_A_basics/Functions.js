@@ -152,9 +152,28 @@ return `this is add ${n1} and ${n2}`
 
 
 
+//anonymous function also we called this function expression  declaration use as a variable
+
+var anonymous_func = function anonymous()
+{
+    console.log("this is anonymous func");
+}
+
+// anonymous()//anonymous is not defined even if name of the is not given also it work by there variable name
 
 
 
+// anonymous_func()//output is this is anonymous func
+
+//anonymous function  also we called this function expression declaration use as a variable without func name 
+
+
+var anonymous_func2 = function ()
+{
+    console.log("this is anonymous func2");
+}
+
+// anonymous_func2() // this is anonymous func2
 
 
 

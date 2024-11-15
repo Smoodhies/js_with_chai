@@ -1,9 +1,9 @@
-// !!premative categories!! 
-//based on how data is stored in memory and provide acces
+// !!permeative categories!! 
+//based on how data is stored in memory and provide access
 //(call by value) means doest not change happen in actual or og data but changes happen in there copy 
 //string , number , boolean , null , undefined , Bigint , symbol
 
-//!!Non premetive !!
+//!!Non permeative !!
 //call by reference //in this actual location or reference are assingned here 
 
 // array , object , functions 
